@@ -17,7 +17,7 @@ def time_py(x):
     elif x >= day:
         time_day = x // day
         rim_res = time_day * day
-        time_hour = (x // hour) - 24
+        time_hour = (x // hour) % 24
         time_min = ((x - rim_res) // min) % 60
         time_sec = (((x - rim_res) - hour)-60) % 60
       
